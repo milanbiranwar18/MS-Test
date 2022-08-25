@@ -31,6 +31,12 @@ namespace MSTestAssignment
             return Regex.IsMatch(Email, RegexEmail);                  //checking   abc.xyz @bl.co.in
         }
 
+        //UC4
+        public static string RegexMobileNumber = "^[1-9]{2}[6-9]{1}[0-9]{9}$";
+        public bool validateMobileNumber(string MobileNumber)
+        {
+            return Regex.IsMatch(MobileNumber, RegexMobileNumber);
+        }
 
     }
 }
