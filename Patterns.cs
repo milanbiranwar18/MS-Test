@@ -66,6 +66,12 @@ namespace MSTestAssignment
             return Regex.IsMatch(Password8, RegexPassword8);
         }
 
+        //UC9
+        public static string RegexEmail9 = "^[0-9a-zA-Z]+([+#%&_.-][a-zA-Z0-9]+)*[@][a-zA-Z0-9]{1,}[.][a-zA-Z]{3}([.][a-zA-Z]{2,3})?$";
+        public bool validateEmail9(string Email9)
+        {
+            return Regex.IsMatch(Email9, RegexEmail9);
+        }
 
     }
 }
