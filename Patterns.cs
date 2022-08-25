@@ -52,5 +52,12 @@ namespace MSTestAssignment
             return Regex.IsMatch(Password6, RegexPassword6);
         }
 
+        //UC7
+        public static string RegexPassword7 = "^[A-Z]{1,}[a-z]{5,}[0-9]{1,}$";
+        public bool validatePassword7(string Password7)
+        {
+            return Regex.IsMatch(Password7, RegexPassword7);
+        }
+
     }
 }
