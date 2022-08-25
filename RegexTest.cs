@@ -41,5 +41,14 @@ namespace MSTest
             bool val = pattern.validateMobileNumber("919032654896");
             Assert.AreEqual(expected, val);
         }
+
+        [TestMethod]
+        public void TestingPassword()
+        {
+            Patterns pattern = new Patterns();
+            bool expected = true;
+            bool val = pattern.validatePassword("Milanbiranwar");
+            Assert.AreEqual(expected, val);
+        }
     }
 }
