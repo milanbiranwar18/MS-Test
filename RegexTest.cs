@@ -4,7 +4,7 @@ using MSTestAssignment;
 namespace MSTest
 {
     [TestClass]
-    public class UnitTest1
+    public class RegexTest
     {
         [TestMethod]
         public void TestMethod1()
