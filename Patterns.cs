@@ -15,5 +15,13 @@ namespace MSTestAssignment
         {
             return Regex.IsMatch(FirstName, RegexFirstName);
         }
+
+        //UC2
+        public static string RegexLastName = "^[A-Z]{1,}[a-z]{3,}$";
+        public bool validateLastName(string LastName)
+        {
+            return Regex.IsMatch(LastName, RegexLastName);
+
+        }
     }
 }
