@@ -33,5 +33,13 @@ namespace MSTest
             Assert.AreEqual(expected, val);
         }
 
+        [TestMethod]
+        public void TestingmobileNumber()
+        {
+            Patterns pattern = new Patterns();
+            bool expected = true;
+            bool val = pattern.validateMobileNumber("919032654896");
+            Assert.AreEqual(expected, val);
+        }
     }
 }
