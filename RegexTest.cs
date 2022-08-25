@@ -47,7 +47,16 @@ namespace MSTest
         {
             Patterns pattern = new Patterns();
             bool expected = true;
-            bool val = pattern.validatePassword("Milanbiranwar");
+            bool val = pattern.validatePassword("milanbiranwar");
+            Assert.AreEqual(expected, val);
+        }
+
+        [TestMethod]
+        public void TestingPassword6()
+        {
+            Patterns pattern = new Patterns();
+            bool expected = true;
+            bool val = pattern.validatePassword6("Milanbiranwar");
             Assert.AreEqual(expected, val);
         }
     }
