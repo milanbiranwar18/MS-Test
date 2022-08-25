@@ -77,5 +77,14 @@ namespace MSTest
             bool val = pattern.validatePassword8("Milanbiranwar123@");
             Assert.AreEqual(expected, val);
         }
+
+        [TestMethod]
+        public void TestingEmail9()
+        {
+            Patterns pattern = new Patterns();
+            bool expected = true;
+            bool val = pattern.validateEmail9("Milanbiranwar@123");
+            Assert.AreEqual(expected, val);
+        }
     }
 }
